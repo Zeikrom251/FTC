@@ -14,13 +14,16 @@
         <nav>
             <a href="index.html"><img src="img/logo.png" alt=""></a>
             <div class="nav-links" id="navLinks">
+                <ion-icon name="close-outline" class="ion close-icon" onclick="hideMenu()"></ion-icon>
                 <ul>
                     <li><a href="../index.html">ACCUEIL</a></li>
                     <li><a href="champ.html">CHAMPIONNATS</a></li>
                     <li><a href="diffusion.html">DIFFUSION</a></li>
                     <li><a href="commu.html">COMMUNAUTÉ</a></li>
+                    <li><a href="partenaire.html">PARTENAIRES</a></li>
                 </ul>
             </div>
+            <ion-icon name="menu-outline" class="ion menu-icon" onclick="showMenu()"></ion-icon>
         </nav>
         <h1>Diffusion</h1>
     </section>
@@ -61,6 +64,18 @@
         <p>Made by Zeikrom</p>
     </section>
 
+    <!-- JavaScript -->
+
+    <!-- Javascript for toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.marginLeft = "0";
+        }
+        function hideMenu() {
+            navLinks.style.marginLeft = "-100%";
+        }
+    </script>
 
     <!-- JavaScript Title change -->
     <script>

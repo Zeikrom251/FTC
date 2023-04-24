@@ -14,13 +14,16 @@
         <nav>
             <a href="../index.html"><img src="img/logo.png" alt=""></a>
             <div class="nav-links" id="navLinks">
+                <ion-icon name="close-outline" class="ion close-icon" onclick="hideMenu()"></ion-icon>
                 <ul>
                     <li><a href="../index.html">ACCUEIL</a></li>
                     <li><a href="champ.html">CHAMPIONNATS</a></li>
                     <li><a href="diffusion.html">DIFFUSION</a></li>
                     <li><a href="commu.html">COMMUNAUTÉ</a></li>
+                    <li><a href="partenaire.html">PARTENAIRES</a></li>
                 </ul>
             </div>
+            <ion-icon name="menu-outline" class="ion menu-icon" onclick="showMenu()"></ion-icon>
         </nav>
         <h1>Communauté</h1>
     </section>
@@ -37,7 +40,7 @@
                 et de streameurs sont ouvertes sur notre Discord. <br>
                 Donc si vous souhaitez nous rejoindre dans l'aventure F1 TEAM COMMUNITY, nous vous invitons à faire une candidatures.
             </p>
-            <div class="button">
+            <div class="button-c">
                 <a href="https://discord.gg/f1-team-community-tm-872208191432323143" target="_blank" class="community-btn">Discord</a>
             </div>
         </div>
@@ -162,6 +165,19 @@
         </div>
         <p>Made by Zeikrom</p>
     </section>
+
+    <!-- JavaScript -->
+
+    <!-- Javascript for toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.marginLeft = "0";
+        }
+        function hideMenu() {
+            navLinks.style.marginLeft = "-100%";
+        }
+    </script>
 
     <!-- JavaScript Title change -->
     <script>
