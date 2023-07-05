@@ -1,15 +1,16 @@
 @font-face {
-    font-family: 'formula1display-bold';
-    src: url('fonts/formula1-bold_web_0-webfont.woff2') format('woff2'),
-         url('fonts/formula1-bold_web_0-webfont.woff') format('woff');
+    font-family: 'neue_plakcompressed';
+    src: url('fonts/neueplak-compregular-webfont.woff2') format('woff2'),
+         url('fonts/neueplak-compregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
-    font-family: 'formula1display-regular';
-    src: url('fonts/formula1-regular_web_0-webfont.woff2') format('woff2'),
-         url('fonts/formula1-regular_web_0-webfont.woff') format('woff');
+    font-family: 'neue_plakcompressedXBlk';
+    src: url('fonts/neueplak-compextrablack-webfont.woff2') format('woff2'),
+         url('fonts/neueplak-compextrablack-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'formula1display-regular';
+    font-family: 'neue_plakcompressed';
 }
 body::-webkit-scrollbar {
     display: none;
@@ -46,8 +47,8 @@ body::-webkit-scrollbar {
 }
 .sub-header h1 {
     margin-top: 150px;
-    font-size: 75px;
-    font-family: 'formula1display-bold';
+    font-size: 120px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 nav {
     display: flex;
@@ -72,14 +73,14 @@ nav img {
     color: white;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 40px;
 }
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
     display: block;
-    background: #f9bc01;
+    background: #f7ff54;
     margin: auto;
     transition: 0.5s;
 }
@@ -87,33 +88,34 @@ nav img {
     width: 100%;
 }
 .info {
-    margin-left: 3%;
-    margin-top: 18%;
+    margin-left: 0%;
+    margin-top: 10%;
 }
 .info h1 {
-    font-size: 70px;
-    font-family: 'formula1display-bold';
+    font-size: 140px;
+    font-family: 'neue_plakcompressedXBlk';
     color: white;
     margin-bottom: 20px;
     text-align: center;
 }
 .info .F1 {
-    color: #f9bc01;
+    color: #f7ff54;
 }
 .info p {
     color: white;
     text-align: center;
+    font-size: 40px;
 }
 .multiText {
-    color: #f9bc01;
+    color: #f7ff54;
 }
 .info a {
-    padding: 10px 18px;
+    padding: 10px 25px;
     text-decoration: none;
     color: white;
     display: inline-block;
-    margin: 30px 0;
-    border-radius: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 .button {
     display: flex;
@@ -126,16 +128,16 @@ nav img {
     color: white;
     border: 1px solid white;
     bottom: 8px;
-    right: 35px;
+    right: 18px;
     padding: 12px 34px;
-    font-size: 16px;
+    font-size: 30px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
 .hero-btn:hover {
     border: 1px solid 'f9bc01';
-    background: #f9bc01;
+    background: #f7ff54;
     transition: 0.5s;
 }
 nav .close-icon {
@@ -154,12 +156,12 @@ nav .menu-icon {
 }
 .diffusions h1 {
     margin-top: 50px;
-    font-size: 36px;
-    font-family: 'formula1display-bold';
+    font-size: 60px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 .diffusions p {
     color: #414141;
-    font-size: 16px;
+    font-size: 30px;
     line-height: 22px;
     padding: 22px;
 }
@@ -170,7 +172,7 @@ nav .menu-icon {
 }
 .diffusion-col {
     flex-basis: 31%;
-    background-color: rgba(249, 188, 1, 0.7);
+    background-color: rgba(247, 255, 84, 0.702);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -182,8 +184,12 @@ nav .menu-icon {
 }
 .diffusion-col h3 { 
     text-align: center;
-    font-family: 'formula1display-bold';
+    font-family: 'neue_plakcompressedXBlk';
     margin: 10px 0;
+    font-size: 36px;
+}
+.diffusion-col p {
+    font-size: 30px;
 }
 .diffusion-btn {
     display: inline-block;
@@ -204,6 +210,7 @@ nav .menu-icon {
     padding: 10px 18px;
     text-decoration: none;
     display: inline-block;
+    font-size: 28px;
     border-radius: 20px;
 }
 
@@ -217,12 +224,12 @@ nav .menu-icon {
 }
 .championnats h1 {
     margin-top: 50px;
-    font-size: 36px;
-    font-family: 'formula1display-bold';
+    font-size: 60px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 .championnats p {
     color: #414141;
-    font-size: 16px;
+    font-size: 35px;
     line-height: 22px;
     padding: 22px;
 }
@@ -257,9 +264,9 @@ nav .menu-icon {
 }
 .layer h3 {
     width: 100%;
-    font-family: 'formula1display-bold';
+    font-family: 'neue_plakcompressedXBlk';
     color: white;
-    font-size: 35px;
+    font-size: 42px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -285,12 +292,12 @@ iframe {
 }
 .community h1 {
     margin-top: 10px;
-    font-size: 36px;
-    font-family: 'formula1display-bold';
+    font-size: 60px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 .community p {
     color: #414141;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 22px;
     padding: 22px;
 }
@@ -311,7 +318,7 @@ iframe {
     transition: 0.5s;
 }
 .bold {
-    font-family: 'formula1display-bold';
+    font-family: 'neue_plakcompressedXBlk';
 } 
 .avis {
     width: 80%;
@@ -320,12 +327,12 @@ iframe {
 }
 .avis h1 {
     margin-top: 50px;
-    font-size: 36px;
-    font-family: 'formula1display-bold';
+    font-size: 60px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 .avis p {
     color: #414141;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 22px;
     padding: 22px;
 }
@@ -334,7 +341,7 @@ iframe {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3cd;
+    background: #fcffc4;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -349,11 +356,11 @@ iframe {
     padding: 0;
 }
 .avis-col h3 {
-    margin-top: 15px;
     text-align: left;
+    font-size: 30px;
 }
 .avis-col .star-icon {
-    color: #f9bc01;
+    color: #f5ff36;
 }
 
 
@@ -365,12 +372,12 @@ iframe {
     padding-top: 100px;
 }
 .partenaires h1 {
-    font-size: 36px;
-    font-family: 'formula1display-bold';
+    font-size: 60px;
+    font-family: 'neue_plakcompressedXBlk';
 }
 .partenaires p {
     color: #414141;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 22px;
     padding: 22px;
 }
@@ -388,6 +395,7 @@ iframe {
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+    font-size: 30px;
 }
 .partenaire-col p {
     padding: 0;
@@ -402,7 +410,7 @@ iframe {
     }
     .nav-links {
         position: fixed;
-        background: rgba(249, 188, 1, 0.6);
+        background: rgba(247, 255, 84, 0.6);
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         height: 100vh;
@@ -440,16 +448,16 @@ iframe {
         padding: 15px;
     }
     .nav-links ul li a {
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 50px;
+        margin-bottom: 15px;
     }
     .nav-links ul li a:hover {
-        font-family: 'formula1display-bold';
+        font-family: 'neue_plakcompressedXBlk';
     }
     .info {
         position: absolute;
         bottom: 40%;
-        right: 20px;
+        right: 15px;
     }
     .info h1 {
         text-align: center;
@@ -467,9 +475,9 @@ iframe {
         margin-top: 25px;
     }
     .sub-header h1 {
-        margin-top: 245px;
-        font-size: 45px;
-        font-family: 'formula1display-bold';
+        margin-top: 190px;
+        font-size: 60px;
+        font-family: 'neue_plakcompressedXBlk';
     }
     .row {
         flex-direction: column;
@@ -513,11 +521,12 @@ iframe {
     transform: translate(-50%, -50%);
 }
 .icons .fa {
-    color: #f9bc01;
+    color: #f7ff54;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 .footers p {
     color: white;
+    font-size: 25px;
 }
